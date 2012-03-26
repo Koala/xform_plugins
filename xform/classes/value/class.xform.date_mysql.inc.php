@@ -91,7 +91,7 @@ class rex_xform_date_mysql extends rex_xform_abstract
 
   function getDescription()
   {
-    return 'date -> Beispiel: date|feldname|Text *|jahrstart|jahrend|[format: Y-m-d]';
+    return 'date -> Beispiel: date_mysql|feldname|Text *|jahrstart|jahrend|[format: Y-m-d]';
   }
 
 
