@@ -1,0 +1,10 @@
+h3. Formularbeispiel
+
+bc.. // include via http://code.jquery.com/jquery-1.4.4.min.js
+onclick_clear_value|name,email,note|auto
+
+// include via dezidierter URL
+onclick_clear_value|name,email,note|<script src="files/jquery.min.js" type="text/javascript"></script>
+
+// kein include
+onclick_clear_value|name,email,note

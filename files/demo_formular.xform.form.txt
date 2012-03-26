@@ -1,0 +1,23 @@
+fieldset|DEMO Kontaktformular:|kontaktformular
+
+textile|h1{fon-style:auto;}. XForm Klasse _mailfrom_<n><n>Wird per @mailfrom usr_email@ als Absendeadresse der versendeten Mail eingesetzt:
+
+text|usr_email|* Email|
+validate|email|usr_email|Bitte geben Sie Ihre Email-Adresse an. 
+
+textile|h1. XForm Klasse _DATE_DIFF_<n><n>Konditionale Überprüfung zweier Datumseingaben:<n>* Anlieferung nicht vor Abholung<n>* Abholung nicht mehr als 1 Tag später
+
+date|V_Datum|Lieferung|2009|2010|format: d-m-Y|
+date|V_Abholung|Abholung|2009|2010|format: d-m-Y|
+
+validate|date_diff|V_Datum|V_Abholung|0|86401|Abhol-Datum liegt vor Anlieferungs-Datum!|Maximaler Veranstaltungs Zeitraum überschritten!
+
+textile|h1. XForm Klasse _recaptcha_<n><n>Wird per @recaptcha ...@ aufgerufen und gibt das reCaptcha aus:
+
+recaptcha|
+
+mailfrom|usr_email
+
+mailto|user@domain.tld
+
+submit|submit|Formular abschicken|no_db 

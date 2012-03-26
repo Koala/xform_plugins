@@ -1,0 +1,12 @@
+h4. Details zu Variablen
+
+* @label@ : Feldname/label des zu bearbeitenden inputs
+* @replace_string@ : String, der das herausgefilterte HTML ersetzt (optional)
+
+h4. Formularbeispiel
+
+bc.. // Textarea:
+
+textarea|usr_note|Notiz *|
+
+validate|strip_html|usr_note|*SPAM*

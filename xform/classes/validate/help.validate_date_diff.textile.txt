@@ -1,0 +1,24 @@
+h4. Details zu Variablen
+
+* @start_date@ : bezieht sich auf Feldnamen vorhergehender Datums-Selectbox
+* @end_date@ : bezieht sich auf Feldnamen vorhergehender Datums-Selectbox
+* @min_diff@ : Mindestabstand zwischen @start_date@ und @end_date@ in Sekunden
+* @max_diff@ : Maximalabstand zwischen @start_date@ und @end_date@ in Sekunden
+* @min_warn_message@ : Fehlermeldung bei zu geringem Mindestabstand
+* @max_warn_message@ : Fehlermeldung bei zu großem Maximalabstand
+
+h4. Formularbeispiel
+
+bc.. // Lieferung:
+
+date|usr_datum|Lieferung|2009|2010|format: d-m-Y|
+
+// Abholung:
+
+date|usr_abholung|Abholung|2009|2010|format: d-m-Y|
+
+// Datumsvergleich mit Konditionen:
+// 1. Abholung kann nicht vor Lieferung liegen (<0)
+// 2. Abstand zwischen Lieferung und Abholung darf nicht mehr als 1 Tag betragen. (>86400)
+
+validate|date_diff|usr_datum|usr_abholung|0|86401|Abhol-Datum liegt vor Anlieferungs-Datum!|Maximaler Veranstaltungs Zeitraum überschritten!

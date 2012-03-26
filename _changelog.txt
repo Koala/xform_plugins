@@ -1,0 +1,33 @@
+h1. REXDEV XForm Plugins Changelog
+
+h4. 16.2.2011 - v 0.2.86
+
+* neue Klasse: class.xform.selectplus.inc.php (Erweiterung der standard select Klasse um Attribute)
+* neue Klasse: class.xform.textplus.inc.php (Erweiterung der standard text Klasse um Attribute)
+
+h4. 19.1.2011 - v 0.2
+
+* neue Klasse: class.xform.onclick_clear_value.inc.php
+
+h4. 18.1.2011 - v 0.1.2
+
+* erste Version als "echtes" Plugin
+* neue Klasse: class.xform.validate_strip_html.inc.php
+
+h4. 19.6.2010 - v 0.1.1
+
+* bugfix in function.rexdev_incparse.inc.php
+* code rewrite
+* Hilfetexte bearbeitet
+* plugin toggle als jquery slide
+
+h4. 8.5.2010 - v 0.1
+
+* erstes release
+* installierte Plugins:
+** VALUE:
+### recaptcha
+### mailfrom
+### textile
+** VALIDATE:
+### date_diff

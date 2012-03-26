@@ -1,0 +1,4 @@
+* In der Formulareingabe von XForm sind keine mehrzeilgen Eingaben möglich,
+daher muß ein Zeilenumbruch durch folgenden Platzhalter notiert werde: @<n>@
+* Das XForm Parameter-Trennzeichen @|@ (pipe) kann im Textile Text verwendet werden.
+Es wird normal ausgegeben bzw. bezügl. seiner Funktion (Tabellen) verarbeitet.

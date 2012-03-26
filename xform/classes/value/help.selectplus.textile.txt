@@ -1,0 +1,5 @@
+h3. Formularbeispiel
+
+bc.. // Definition einer zusätzlichen CSS Klasse und eines onchange JS handlers:
+
+selectplus|gender|Geschlecht *|Frau=w;Herr=m|[no_db]||||class>>>css-class###onchange>>>alert(this.val);

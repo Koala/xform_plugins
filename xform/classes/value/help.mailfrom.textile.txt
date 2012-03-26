@@ -1,0 +1,6 @@
+h3. Formularbeispiel
+
+bc.. text|usr_email|* Email|
+validate|email|usr_email|Bitte geben Sie Ihre Email-Adresse an.
+
+mailfrom|usr_email

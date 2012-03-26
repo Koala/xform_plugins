@@ -1,0 +1,24 @@
+h4. Details zu Variablen
+
+* @label@ : Label/Bezeichner des reCaptchas
+* @warning_text@ : Fehlerext bei falsch ausgefülltem reCaptcha
+* @public-key@ : Erhältlich bei "reCAPTCHA Keys/Signup":https://admin.recaptcha.net/accounts/signup
+* @private-key@ : Erhältlich bei "reCAPTCHA Keys/Signup":https://admin.recaptcha.net/accounts/signup
+* @lang@
+## @en@ : English
+## @nl@ : Dutch
+## @fr@ : French
+## @de@ : German
+## @pt@ : Portuguese
+## @ru@ : Russian
+## @es@ : Spanish
+## @tr@ : Turkish
+* @theme@
+## Vordefiniert: @red@, @white@, @blackglass@, @clean@
+## Bei Verwendung von eigenem CSS: @custom@
+* @custom_theme_widget@ : ID eines DOM Elements, näheres siehe "(blank)Custom Theming":http://recaptcha.net/apidocs/captcha/client.html#customization
+
+h4. Weiterführende Infos zu reCaptcha:
+
+* "reCAPTCHA Quickstart":http://recaptcha.net/plugins/php
+* "reCAPTCHA Keys/Signup":https://admin.recaptcha.net/accounts/signup
