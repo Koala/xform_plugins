@@ -103,7 +103,7 @@ class rex_xform_time_mysql extends rex_xform_abstract
   {
     return array(
           'type' => 'value',
-          'name' => 'time',
+          'name' => 'time_mysql',
           'values' => array(
                 array( 'type' => 'name',   'label' => 'Feld' ),
                 array( 'type' => 'text',   'label' => 'Bezeichnung'),

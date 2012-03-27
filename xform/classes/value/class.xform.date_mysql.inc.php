@@ -99,7 +99,7 @@ class rex_xform_date_mysql extends rex_xform_abstract
   {
     return array(
       'type' => 'value',
-      'name' => 'date',
+      'name' => 'date_mysql',
       'values' => array(
         array( 'type' => 'name',    'label' => 'Feld' ),
         array( 'type' => 'text',    'label' => 'Bezeichnung'),

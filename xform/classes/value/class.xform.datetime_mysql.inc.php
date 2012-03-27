@@ -155,7 +155,7 @@ class rex_xform_datetime_mysql extends rex_xform_abstract
   {
     return array(
       'type' => 'value',
-      'name' => 'datetime',
+      'name' => 'datetime_mysql',
       'values' => array(
         array( 'type' => 'name', 'label' => 'Feld' ),
         array( 'type' => 'text', 'label' => 'Bezeichnung'),
