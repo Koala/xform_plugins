@@ -88,22 +88,16 @@ if($include_files)
        a319_incparse($include_root,'settings.'.$xform_name.'.inc.php','php',false);
     }
 
-    if(file_exists($include_root.'help.'.$xform_name.'.textile.txt') || file_exists($include_root.'help.'.$xform_name.'.txt'))
+    if(method_exists($class,'getHelp'))
     {
       echo '<div class="rex-form">
       <fieldset class="rex-form-col-1">
       <legend>Hilfe</legend>
       <div class="rex-form-wrapper">';
 
-      if(file_exists($include_root.'help.'.$xform_name.'.textile.txt'))
-      {
-        a319_incparse($include_root,'help.'.$xform_name.'.textile.txt','textile',false);
-      }
+      $help = $class::getHelp();
+      echotextile($help['content']);
 
-      if(file_exists($include_root.'help.'.$xform_name.'.txt'))
-      {
-        a319_incparse($include_root,'help.'.$xform_name.'.txt','txt',false);
-      }
       echo '</div></fieldset></div>';
     }
 
