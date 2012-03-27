@@ -38,4 +38,23 @@ class rex_xform_mailfrom extends rex_xform_abstract
    .'<code class="xform-form-code">mailfrom|usr_email</code> <i>(Verweis auf vorhergehendes Eingabefeld)</i>'
       ;
   }
+
+
+  function getHelp()
+  {
+    return array ('type'    => 'textile',
+                  'content' => '
+h3. Formularbeispiel
+
+bc.. text|usr_email|* Email|
+validate|email|usr_email|Bitte geben Sie Ihre Email-Adresse an.
+
+mailfrom|usr_email
+');
+  }
+
+  
+
+
+
 }
