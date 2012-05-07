@@ -10,10 +10,10 @@ class rex_xform_date_mysql extends rex_xform_abstract
     $month = date('m');
     $year  = date('Y');
 
-    if (!is_array($this->getValue()) && strlen($this->getValue()) == 8) {
+    if (!is_array($this->getValue()) && strlen($this->getValue()) == 10) {
       $year  = (int) substr($this->getValue(),0,4);
       $month = (int) substr($this->getValue(),5,2);
-      $day   = (int) substr($this->getValue(),7,2);
+      $day   = (int) substr($this->getValue(),8,2);
     } else {
       if (isset($_REQUEST['FORM'][$this->params['form_name']]['el_'.$this->getId()]['day'])) $day = $_REQUEST['FORM'][$this->params['form_name']]['el_'.$this->getId()]['day'];
       if (isset($_REQUEST['FORM'][$this->params['form_name']]['el_'.$this->getId()]['month'])) $month = $_REQUEST['FORM'][$this->params['form_name']]['el_'.$this->getId()]['month'];
